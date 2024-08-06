@@ -22,3 +22,14 @@ let c = 5;
 console.log(c=='5');
 
 
+// Alert
+alert("Somthing is wrong!");
+
+// console.log("This is a simple log");
+// console.error("This is error msg");
+// console.warn("This is a warning");
+
+// Prompt
+
+let yourname = prompt("Enter your name ");
+console.log(yourname);
