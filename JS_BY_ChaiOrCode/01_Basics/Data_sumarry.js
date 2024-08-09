@@ -36,7 +36,6 @@ let myObj = {
 
 const myFunction = function(){
     console.log("Hello World!");
-    
 }
 
 
@@ -45,3 +44,28 @@ const myFunction = function(){
 
 // JavaScript is a multi-paradigm, ( dynamic language )
 // with types and operators, standard built-in objects, and methods.
+
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "namanpatidary.com"
+let anothername = myYoutubename
+anothername = "namuusGamingy.com"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+
+
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne 
+
+userTwo.email = "naman@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
