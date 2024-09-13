@@ -69,3 +69,27 @@ userTwo.email = "naman@gmail.com"
 
 console.log(userOne);
 console.log(userTwo);
+
+
+
+
+// -------------------IMPORTANT ---------------------------------
+
+
+// JavaScript is dynamically typed. This means that variable types are determined 
+// at runtime rather than compile-time. In JavaScript, you do not have to declare 
+// the data type of a variable when defining it. You can assign different types of 
+// values to the same variable at different times, as shown below:
+
+let x = 5;      // x is a number
+x = "Hello";    // Now x is a string
+
+// Type Inference at Runtime: The data type of a variable is inferred based 
+// on the value it holds at runtime, not at the time of writing the code.
+
+// No Type Declarations: You don't explicitly declare the type of variables 
+// (like int, string, etc.). JavaScript determines the type as the program runs.
+
+// Type Flexibility: A single variable can hold values of different types 
+// throughout the execution of the program. This flexibility makes 
+// JavaScript a dynamically typed language.
