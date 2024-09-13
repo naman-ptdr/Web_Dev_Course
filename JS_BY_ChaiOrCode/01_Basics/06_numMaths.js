@@ -22,14 +22,28 @@ console.log(otherNumber.toPrecision(3))
 const hundreds = 1000000
 console.log(hundreds.toLocaleString('en-IN'))
 
+const maxV = Number.MAX_VALUE
+const minV = Number.MIN_VALUE
+// const maxSafe = MAX_SAFE_INTEGER
+
+console.log(`Number max value is ${maxV}`);
+console.log(`Number min value is ${minV}`);
+// console.log(`Number max Safe value is ${maxSafe}`);
+
+
+
+
+
 // -------------------------------MATHS-----------------------------
 
-console.log(Math)
+console.log(Math) // MATH LIBRARY IS AN OBJECT CONTAINS VARIOUS PROPERTY
 
 // console.log(Math.abs(-4))
 // console.log(Math.round(4.6));
-// console.log(Math.ceil(4.2))
-// console.log(Math.floor(4.9))
+// console.log(Math.ceil(4.2)) // ->  5 
+// console.log(Math.floor(4.9))  // -> 4
+
+// sqrt , power
 
 // console.log(Math.min(4, 6, 2, 9))
 // console.log(Math.max(6, 3, 9, 1))

@@ -16,3 +16,26 @@ console.log(typeof myDate)
 let myCreatedDate = new Date("01-28-2023") // -- > mm-dd-yy
 
 console.log(myCreatedDate.toLocaleString())
+
+// time stamps
+ let myTimeStamp = Date.now()
+ console.log(myTimeStamp)  // milisecands
+
+ console.log(myCreatedDate.getTime()) // date to milisecands
+
+//  mili second to seconds
+console.log(Math.round(Date.now()/1000));
+
+
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth()+1) // start from 0
+console.log(newDate.getDay())  // monday = 1
+console.log(newDate.getFullYear())
+
+
+//    ---------------- Important method ----------------------
+newDate.toLocaleString('default',{
+    weekday: "long",
+    // timeZone: ''
+})
