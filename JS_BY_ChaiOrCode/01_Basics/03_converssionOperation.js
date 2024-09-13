@@ -3,12 +3,21 @@ let score = "33abc"
 console.log(typeof score);
 console.log(typeof(score));
 
+console.log(score);
 
 
 let valueInNumber = Number(score)
-console.log(typeof(valueInNumber));
+console.log(typeof(valueInNumber));   // 33abc is string after convert it into number it provides NaN   - not a number
 
 console.log(valueInNumber);
+
+let a = null
+console.log(typeof(a))
+console.log(a);
+
+let b = Number(a)
+console.log(typeof(b))
+console.log(b);
 
 
 
@@ -73,3 +82,5 @@ let gamecounter = 100;
 console.log(++gamecounter)
 // gamecounter++;    => post increament
 console.log(gamecounter++)
+
+
