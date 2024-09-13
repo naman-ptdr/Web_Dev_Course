@@ -3,10 +3,10 @@ const repoCount = 50
 
 // console.log(name + repoCount + "Value");
 
-console.log(`Hello my name is ${name.toUpperCase} ans my repo count is ${repoCount}`)
+console.log(`Hello my name is ${name} ans my repo count is ${repoCount} ${"Value"}`)
 
 //  object of string
-const gameName = new String('Naman-Patidar')
+const gameName = new String('Naman-Patidar')  //contructor
 
 console.log(typeof(name))
 console.log(typeof(gameName))
@@ -21,7 +21,7 @@ console.log(gameName.indexOf('a'))
 
 const newString = gameName.substring(0,4)
 console.log(newString)
-const anotherString = gameName.slice(-8,4)
+const anotherString = gameName.slice(-8,6)
 console.log(anotherString)
 
 
@@ -34,3 +34,12 @@ const url = "https://naman.com/patidar%20tejra"
 console.log(url.replace('%20', '-'))
 
 console.log(url.includes('hay'))
+
+const str = "The quick brown fox jumps over the lazy dog."
+// console.log(str.split(' '));
+const words = str.split(' ');
+console.log(words[3])
+
+const chars = str.split('');
+console.log(chars[8])
+
