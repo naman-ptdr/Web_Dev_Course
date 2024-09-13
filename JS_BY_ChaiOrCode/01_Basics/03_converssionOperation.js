@@ -58,6 +58,7 @@ console.log(negValue)
 // console.log(2/3);
 // console.log(2%3);
 
+//Concatination of strings
 
 // let str1 = "Hello "
 // let str2 = "Naman"
@@ -71,7 +72,7 @@ console.log(negValue)
 // console.log(1+2+"3");
 
 
-// console.log(+true);  => bad habit
+// console.log(+true); = 1  => bad habit
 
 // let num1, num2, num3;
 // num1 = num2 = num3 = 2+2
@@ -84,3 +85,10 @@ console.log(++gamecounter)
 console.log(gamecounter++)
 
 
+let x = 3;
+const y = x++;
+console.log(`x : ${x} , y : ${y}`);
+
+let i = 3;
+const j = ++i;
+console.log(`i : ${i} , j : ${j}`);
