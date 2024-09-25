@@ -8,6 +8,8 @@ const values = coding.forEach((item)=>{
 console.log(values);
 
 
+// filter method
+
 
 const mynums = [1, 2, 3, 4, 5, 6, 7, 8,9]
 // const newNums = mynums.filter((num)=> num>4) and also we can write
