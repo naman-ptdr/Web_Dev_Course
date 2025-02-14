@@ -6,7 +6,7 @@ console.log(typeof(score));
 console.log(score);
 
 
-let valueInNumber = Number(score)
+let valueInNumber = Number(score)  // it converts string to numbers
 console.log(typeof(valueInNumber));   // 33abc is string after convert it into number it provides NaN   - not a number
 
 console.log(valueInNumber);
