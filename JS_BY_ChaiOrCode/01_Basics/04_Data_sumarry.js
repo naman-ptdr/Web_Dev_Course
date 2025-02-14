@@ -1,6 +1,7 @@
 //  kis type se data ko memorry mai rakha jata hai or acces kiya jata hai
 //  therefor data devided into two catagories
-// Primitive 
+
+// 1. Primitive 
 // call by value inki copy banti hai
 
 // 7 types : String , Number, Boolean, null , undefined, Symbol
@@ -9,7 +10,7 @@ const name = "Naman"
 const number = 100
 const cgpa = 9.9
 const isPass = true
-const nickName = null
+const temprature = null
 let userEmail;
 
 const id = Symbol('123')
@@ -18,10 +19,14 @@ console.log(id == anotherId);
 
 const bigNumber = 34988736555577564n
 console.log(typeof bigNumber);
-console.log(typeof nickName);
+console.log(typeof temprature);
+userEmail = "namuu";
+console.log(userEmail);
+// temprature = 30;               // not possible
+console.log(temprature);
 
 
-// Non primitive
+// Non primitive (Reference)
 // call by referances
 
 // Arrays,  Objects, Functions    => objects are important
