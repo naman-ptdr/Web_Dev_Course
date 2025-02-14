@@ -29,7 +29,8 @@ const obj2 = {3 : "c", 4 : "d"}
 
 // const obj3 = {obj1, obj2}  // in this obj3 contains obj 1 and 2 not mearge them
 
-// const obj3 = Object.assign({}, obj1, obj2)     // {} - target  and in this empty object obj1 and 2 are added  
+//target and source
+// const obj3 = Object.assign({}, obj1, obj2)     // {} - target  and other are source and in this empty object obj1 and 2 are added  
 const obj3 = {...obj1, ...obj2}  //  same as above one
 
 
