@@ -6,6 +6,14 @@ const myArr2 = new Array(1, 2, 3, 4, 5)
 console.log(myArr[2]);
 
 
+// SHALLOW COPY - a shallow copy of an object is a copy whose properties share the same references (point to same underlying values) as those of the source object from which the copy was made.
+// As a result when you change either the source of the copy , you may also cause the other object to change too
+
+
+// DEEOP COPY - A deep copy of an object is a copy whose properties do not share the same references as thode of the source object from which the copy was made. 
+// As a result, when you change either the source or the copy, you can be assured you're not causing the other object to change too
+
+
 // Array Methods
 
 myArr.push(6)
