@@ -15,7 +15,7 @@ let isLoggedIn = false
 
 // number  => range of number 2 to the power 53
 // bigint -->  for big number
-// string => ""
+// string => "" OR ''
 // boolean => true/false
 // null => standalone Value
 // undefined -> 
