@@ -1,19 +1,19 @@
 // if we didn't know about how many arrguments are there 
 
 // rest or spread operator in js  -->  ...
-function calcCartPrice(...num){
+function calcCartPrice1(...num){
     return num
 }
 
-console.log(calcCartPrice(200, 400, 500));
-console.log(calcCartPrice(200, 400, 500, 600, 700));
-console.log(calcCartPrice(200, 400, 900));
+console.log(calcCartPrice1(200, 400, 500));
+console.log(calcCartPrice1(200, 400, 500, 600, 700));
+console.log(calcCartPrice1(200, 400, 900));
 
-function calcCartPrice(val1, val2, ...num1){
+function calcCartPrice2(val1, val2, ...num1){
     return num1
 }
 // val1 = 100 and val2 = 200
-console.log(calcCartPrice(100, 200, 300, 400, 500, 600, 700));
+console.log(calcCartPrice2(100, 200, 300, 400, 500, 600, 700));
 
 const user = {
     username : "Naman",
