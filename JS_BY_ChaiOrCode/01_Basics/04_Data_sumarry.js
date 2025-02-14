@@ -47,11 +47,11 @@ const myFunction = function(){
 
 // javascript is which type of language
 
-// JavaScript is a multi-paradigm, ( dynamic language )
+// JavaScript is a multi-paradigm, ( dynamic language ) because variable tye are determined at runtime ratherthen compile time
 // with types and operators, standard built-in objects, and methods.
 
 
-// Stack (Primitive), Heap (Non-Primitive)
+// Stack (Primitive)    - copy milta hai access karne par   , Heap (Non-Primitive)  -- reference milta hai
 
 let myYoutubename = "namanpatidary.com"
 let anothername = myYoutubename
