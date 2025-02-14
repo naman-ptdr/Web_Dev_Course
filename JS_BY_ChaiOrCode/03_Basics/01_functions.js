@@ -40,4 +40,4 @@ function loginUerMessage(username){
 
 console.log(loginUerMessage(""))
 console.log(loginUerMessage("Naman"))
-console.log(loginUerMessage())
+console.log(loginUerMessage())   // username - undefined
