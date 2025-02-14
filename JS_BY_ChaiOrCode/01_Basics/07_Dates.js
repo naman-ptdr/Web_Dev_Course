@@ -5,7 +5,9 @@ console.log(myDate.toTimeString())
 console.log(myDate.toISOString())
 console.log(myDate.toJSON())
 console.log(myDate.toLocaleDateString())
+console.log(myDate.toLocaleTimeString())
 console.log(myDate.toLocaleString())
+
 
 console.log(typeof myDate)
 
@@ -19,7 +21,7 @@ console.log(myCreatedDate.toLocaleString())
 
 // time stamps
  let myTimeStamp = Date.now()
- console.log(myTimeStamp)  // milisecands
+ console.log(myTimeStamp)  // milisecands  1st jan 1970 to now
 
  console.log(myCreatedDate.getTime()) // date to milisecands
 
