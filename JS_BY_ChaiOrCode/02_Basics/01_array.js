@@ -21,11 +21,11 @@ myArr.push(8)
 
 myArr.pop()
 
-myArr.unshift(9)  // it shift all values of array and insert 9 at begining
+myArr.unshift(9)  // time consuming operation // it shift all values of array and insert 9 at begining
 myArr.shift() // remove first element and shift
 
 console.log(myArr.includes(11));
-console.log(myArr.indexOf(3));
+console.log(myArr.indexOf(3));     //indexOf(11) -- -1;
 
 console.log(myArr);
 const newArr = myArr.join()
@@ -38,12 +38,13 @@ console.log(typeof(newArr));
 
 console.log("A", myArr);
 
-const myn1 = myArr.slice(1, 3)
+const myn1 = myArr.slice(1, 3)        // it print index[1, 2] excluding three
 console.log(myn1)
 console.log("B", myArr);
 
 
-const myn2 = myArr.splice(1, 3)
+const myn2 = myArr.splice(1, 3)            // it iclude 3 also print index[1, 3]
 console.log(myn2);
 console.log("C", myArr);
 
+// In splice original array will be manipulate and splice elements are extrecting from this .
