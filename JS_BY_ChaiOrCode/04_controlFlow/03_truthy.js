@@ -18,8 +18,11 @@ if(userEmail){
 // const arr = []
 // if(arr.length === 0) console.log("Array is empty");
 
+// ----- For check object is empty or not we have to create array of object keys and if this array of keys is empty that means object is empty
 
 // const emptyObj = {}
+
+//// array of keys in object ---   Object.keys(emptyObj)
 // if(Object.keys(emptyObj).length === 0) console.log("Object is empty");
 
 
