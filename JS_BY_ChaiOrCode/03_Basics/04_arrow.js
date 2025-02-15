@@ -20,15 +20,15 @@ console.log(this);
 //  if we run this in browser then it returns window object because in browser globle object is window
 
 // function chai(){
-//     let username = "Naman"
-//     console.log(this);
+//     let username = "Naman" 
+//     console.log(this);    //-------undefined
 // }
 // chai()
 
 
 // function chai(){
 //     let username = "Namane"
-//     console.log(this.username);
+//     console.log(this.username);    // ---- undefined
     
 // }
 // chai()
@@ -44,7 +44,7 @@ console.log(this);
 
 // const chai = () => {
 //     let username = "Naman"
-//     console.log(this);
+//     console.log(this);     
 // }
 // chai()
 
