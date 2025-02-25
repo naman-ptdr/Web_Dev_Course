@@ -19,5 +19,34 @@
     addLanguage("Python")
     addLanguage("Java")
 
+//Optimized way
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+
+        // const addText = document.createTextNode(langName)
+        // li.appendChild(addText)
+
+        li.appendChild(document.createTextNode(langName))
+
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLanguage("golang")
+    //Edit
+    const secondLang = document.querySelector('li:nth-child(2)')
+    // console.log(secondLang)
+    secondLang.innerHTML = "Mojo"
+    const newLi = document.createElement('li')
+    newLi.textContent = "MOJO"
+    secondLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li> TypeScript </li>'
+
+    // REMOVE 
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
 </script>
 </html>
