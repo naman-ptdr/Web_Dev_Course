@@ -20,6 +20,7 @@ for (const key in arr) {
 }
 
 // map is not iterable
+
 const map = new Map()
 map.set("roll1", "Naman")
 map.set("roll2", "Rupesh")

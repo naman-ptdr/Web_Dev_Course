@@ -43,7 +43,9 @@ const myObj = {
     game3 : 'FREE FIRE',
     game4 : 'GTA-V',
 }
-//  object is not iterable
+//  object is not iterable by FOR OF LOOP
+
+
 // for(const [key, value] of myObj){
 //     console.log(key , ':', 'value');
     
