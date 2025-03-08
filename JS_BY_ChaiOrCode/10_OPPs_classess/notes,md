@@ -1,0 +1,27 @@
+Do javascript really have classes?
+
+Yes , JS does have classes. THis fesature was introduced with the ECMAScript 2015 specification (often referred to as Es ).
+Hovever, its important to note that JS is primarilly a Prototype - based language, and its classes are primarily syntatic 
+sugar over existing prototype-based inheritance mechanisms.
+In other words it provides a more familier syntax for devlopers coming from class- based lang. such as java and c++, but under the hood , it works somewhat differently.
+
+
+#javascript and classes
+
+# oops
+
+#objects
+-collection of properties and methods
+-toLowerCase
+
+#why use oop
+to prevent messy code
+
+#part of oop
+    object literal
+-Constructor function 
+-Prototypes
+-classes
+-Instances(new, this)
+
+#4 pillars
