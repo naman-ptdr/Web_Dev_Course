@@ -39,10 +39,3 @@ const userTwo = User("naman", 22, true)
 
 console.log(userOne);
 console.log(userTwo);
-
-
-// By new keyword
-
-// step1 - new object is created
-// step2 - constructor function is called by new keyword
-// step3 - all arguments are injecting into this keyword
