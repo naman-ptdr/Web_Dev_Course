@@ -1,71 +1,94 @@
+// The promise object represnts the evantual completion for failure of an asynchronous operation and its resulting values.
+
 const promisOne = new Promise(function(resolve, reject){
     //Do an async task
     //DB calls, cryptography , network
     setTimeout(function(){
         console.log('Async task is complete');
-        resolve()
+        resolve()          //--- For connecting resolve and .then
     }, 1000)
 })
 
-promisOne.then(function(){
+promisOne.then(function(){              // .then is directly connected to resolve
     console.log("Promise consumed");
 })
 
 
-new promisOne(function(resolve, reject){
+
+new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("Async task 2");
-        resolve()
-    }, 1000)
+        resolve();
+    } , 1000)
 }).then(function(){
-    console.log("Async 2 resolved");
+    console.log("Async task 2 resolve");
 })
+
+
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
-        resolve({username: "Naman", email: "namuu@gmail.com"})
+        resolve({userName : "Naman", email : "namuu@gmail.com"})
     }, 1000)
 })
-
 promiseThree.then(function(user){
     console.log(user);
+    
 })
+
+
+
+
 
 const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = true;
+        let error = false;
         if(!error){
-            resolve({username: "naman", password: "1234"})
+            resolve({userName : "Naman", password : "12345"})
         }else{
-            reject('ERROR : Somthing went wrong')
+            reject('ERROR : somthing went wrong')
         }
-        
     }, 1000)
 })
 
 promiseFour
 .then((user)=>{
     console.log(user);
-    return user.username;
-}).then((username)=>{
-    console.log(username);
-}).catch(function(error){
+    return user.userName;      // this .then return to its chained .then
+}).then((userName)=>{
+    console.log(userName);
+}).catch((error)=>{
     console.log(error);
-}).finally(()=> console.log("The promise is either resolved or reject"))
+}).finally(()=>{
+    console.log("The Promise is either Resolve or Reject.");
+    
+})
+
+
+
 
 
 const promisFive = new Promise(function(resolve, reject){
     setTimeout(function(){
-        let error = true;
+        let error = false;
         if(!error){
             resolve({username: "javascript", password: "1234"})
         }else{
-            reject('ERROR : Somthing went wrong')
+            reject('ERROR : JS went wrong')
         }
     },1000)
 })
 
-async function consumePromisefive() {
-    const response = await promisefive;
-    console.log(response);
+
+async function consumePromiseFive(){
+    // const response = await consumePromiseFive;
+    // console.log(response);
+    try{
+        const response = await promisFive
+        console.log(response);
+    }catch(error){
+        console.log(error);
+    }
 }
+
+consumePromiseFive();
