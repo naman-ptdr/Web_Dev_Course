@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <h2>Closure</h2>
+    <p>A closure is the combination of a function bundled together 
+        (enclosed) with refrences to its surrounding state (the lexical environment),
+        In Othe words, a closure gives you access to an outer function s scope from an inner function . 
+        In js , closure are created every time a function is created , at function creation time.
+    </p>
+    <h1>Lexical Scoping</h1>
+</body>
+<script>
+    // function init(){
+    //     let name = "Mozilla";                   //local variable created by init
+    //     function displayName(){
+    //              // displayName() is the inner function , that forms the closure
+    //         console.log(name);                    // use variable declared in the parent function
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+
+
+    // closure
+    function makeFunc(){
+        const name = 'Mozilla';
+        function displayName(){
+            console.log(name);
+        }
+        return displayName;        // it returns whole lexical scope of parent func
+    }
+    const myFunc = makeFunc();       // 
+    myFunc();
+
+
+</script>
+</html>
