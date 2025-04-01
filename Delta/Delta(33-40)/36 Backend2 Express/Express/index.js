@@ -24,3 +24,9 @@ app.get("/:username/:id", (req, res) => {
     let {username, id} = req.params;
     res.send(`Wlcome to the page of @${username}`);
 });
+
+
+app.get("/search", (req, res) => {
+    console.log(req.query);
+    res.send("Search result");
+})
